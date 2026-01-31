@@ -87,27 +87,62 @@ bt8.addEventListener("click", ()=>{
 })
 
 // 9. Set a variable to 50. Divide it by 2 using /= and log the final value.
-const variab = 50;
-const divi = variab /= 2;
-console.log(divi);
+let setVar = 50
+let newSet = setVar /= 2;
+console.log(newSet);
+
+
 
 
 // 10. Create a variable, assign it a value from prompt(), then increase it by 10 and show the result.
-let create;
-let varPrompt = Number(prompt("Enter Value"))
-let assign = create + varPrompt;
-console.log(assign);
+const task10 = document.querySelector("#task10")
+task10.addEventListener("click", ()=>{
+    let varPrompt = Number(prompt("Enter Value"))
+    let create = varPrompt;
+    let assign = create += 10;
+    console.log(assign);
+})
 
 
 
 
 
 // ✴️ Comparison Operator Tasks
-// 11. Ask the user for two numbers. Use > to check if the first number is greater than the
-// second, then log the result (true/false).
-// 12. Ask the user for two numbers. Use < to check if the first number is less than the second,
-// then alert the result.
+// 11. Ask the user for two numbers. Use > to check if the first number is greater than the second, then log the result (true/false).
+const task11 = document.querySelector("#task11")
+task11.addEventListener("click", ()=>{
+    let num1 = Number(prompt("Enter A Number"))
+    let num2 = Number(prompt("Enter Sercond Number"))
+   if (num1 > num2) {
+    console.log(true)
+   }
+   else{
+    console.log(false)
+   }
+})
+
+// 12. Ask the user for two numbers. Use < to check if the first number is less than the second, then alert the result.
+const task12 = document.querySelector("#task12")
+task12.addEventListener("click", ()=>{
+    let num1 = Number(prompt("Enter First Number"))
+    let num2 = Number(prompt("Enter Second Number"))
+   if (num1 < num2) {
+    alert("The First Number is less than the second")
+   }
+   else{
+    alert("the first is greater then the second")
+   }
+})
+
+
+
 // 13. Ask the user for a number. Use == to check if it equals 100 and log the result.
+const task13 = document.querySelector("#task13")
+task13.addEventListener("click", ()=>{
+    let user = Number(prompt("Enter A Number"))
+    
+})
+
 // 14. Ask the user for a number. Use === to check if it is exactly equal to the string "100" and
 // log the result.
 // 15. Ask the user for two numbers. Use != to check if they are not equal and alert the result.
