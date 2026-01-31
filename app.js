@@ -158,6 +158,9 @@ task14.addEventListener("click", ()=>{
     console.log(check)
 })
 
+
+
+/*
 //Instructions:-> 15. Ask the user for two numbers. Use != to check if they are not equal and alert the result.
 let userAsk = Number(prompt("Enter a number"))
 let userAsk2 = Number(prompt("Enter Second Number"))
@@ -185,12 +188,27 @@ let fNum = Number(prompt("Enter A Num"))
 let sNum = Number(prompt("Enter Second Num"))
 let checktheNum = fNum <= sNum;
 console.log(checktheNum);
-
+*/
 
 
 
 // ✴️ Logical Operator Tasks
-// 19. Ask the user for age and country. Use && to check if age is over 18 and country is
-// "USA". Log the result.
-// 20. Ask the user to enter a color and a shape. Use || to check if the color is "red" or the
+
+// 19.Instructions:-> Ask the user for age and country. Use && to check if age is over 18 and country is "USA". Log the result.
+const task19 = document.querySelector("#task19")
+task19.addEventListener("click", ()=>{
+    let userAge = Number(prompt("Enter YOur age"))
+    let userCountry = prompt("Enter Your country").toUpperCase()
+    let checkINs = userAge > 18 && userCountry === 'USA'
+    console.log(checkINs);
+})
+
+// 20. instructions Ask the user to enter a color and a shape. Use || to check if the color is "red" or the
 // shape is "circle". Show the result in an alert.
+const task20 = document.querySelector("#task20")
+task20.addEventListener("click", ()=>{
+    let user = prompt("Enter A color")
+    let shape = prompt("Enter A shape")
+    alert(user === 'red' || shape === 'circle')
+
+})
