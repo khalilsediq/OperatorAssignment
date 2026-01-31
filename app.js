@@ -126,12 +126,14 @@ const task12 = document.querySelector("#task12")
 task12.addEventListener("click", ()=>{
     let num1 = Number(prompt("Enter First Number"))
     let num2 = Number(prompt("Enter Second Number"))
-   if (num1 < num2) {
-    alert("The First Number is less than the second")
-   }
-   else{
-    alert("the first is greater then the second")
-   }
+    let check = num1 > num2;
+    alert(check)
+//    if (num1 < num2) {
+//     alert("The First Number is less than the second")
+//    }
+//    else{
+//     alert("the first is greater then the second")
+//    }
 })
 
 
@@ -140,18 +142,52 @@ task12.addEventListener("click", ()=>{
 const task13 = document.querySelector("#task13")
 task13.addEventListener("click", ()=>{
     let user = Number(prompt("Enter A Number"))
-    
+    if (user == 100) {
+        console.log(user);        
+    } else(
+        console.log("Sorry Can't log The results because it's not equal to 100")
+        
+    )
 })
 
-// 14. Ask the user for a number. Use === to check if it is exactly equal to the string "100" and
-// log the result.
-// 15. Ask the user for two numbers. Use != to check if they are not equal and alert the result.
-// 16. Ask the user for two numbers. Use !== to check if they are not strictly equal and log
-// the result.
-// 17. Ask for two numbers and check if the first is greater than or equal to the second.
-// Display result using alert.
-// 18. Ask for two numbers and check if the first is less than or equal to the second. Show
-// result in the console.
+// 14. Ask the user for a number. Use === to check if it is exactly equal to the string "100" and log the result.
+const task14 = document.querySelector("#task14")
+task14.addEventListener("click", ()=>{
+    let ask = prompt("Enter A number")
+    let check = ask === "100"
+    console.log(check)
+})
+
+//Instructions:-> 15. Ask the user for two numbers. Use != to check if they are not equal and alert the result.
+let userAsk = Number(prompt("Enter a number"))
+let userAsk2 = Number(prompt("Enter Second Number"))
+let checking = userAsk != userAsk2
+alert(checking)
+
+
+
+
+//16.Instructions:-> Ask the user for two numbers. Use !== to check if they are not strictly equal and log the result.
+const numFirst = Number(prompt('Enter A num'))
+const numSecond = Number(prompt("Enter Second Num"))
+let checkNum = numFirst !== numSecond;
+console.log(checkNum);
+
+
+// 17. Ask for two numbers and check if the first is greater than or equal to the second. Display result using alert.
+let oneNum = Number(prompt("Enter Num")) 
+let secondNum = Number(prompt("Enter Second"))
+let toCheck = oneNum >= secondNum
+alert(toCheck)
+
+// 18. Ask for two numbers and check if the first is less than or equal to the second. Show result in the console.
+let fNum = Number(prompt("Enter A Num"))
+let sNum = Number(prompt("Enter Second Num"))
+let checktheNum = fNum <= sNum;
+console.log(checktheNum);
+
+
+
 
 // ✴️ Logical Operator Tasks
 // 19. Ask the user for age and country. Use && to check if age is over 18 and country is
